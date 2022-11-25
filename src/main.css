@@ -1,7 +1,14 @@
+html {
+  font-family: "NanumSquareNeo-Variable";
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
   width: 100%;
+  user-select: none;
 }
 
 ul {
@@ -21,6 +28,19 @@ ul {
   background-color: white;
 }
 
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: min(1.3rem, 2vmin);
+}
+
+.menu .under-line {
+  position: absolute;
+  height: 0.3rem;
+  background-color: lightcoral;
+  transition: 0.6s ease-out;
+}
+
 .banner {
   text-align: center;
   width: 100%;
@@ -37,6 +57,24 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.inner h1 {
+  font-family: "LINESeedKR-Bd";
+  font-size: min(10rem, 15vmin);
+  margin: 0;
+}
+
+.inner p {
+  font-size: 1.3rem;
+}
+
+.inner li {
+  cursor: pointer;
+  border: 1px gray solid;
+  padding: 10px 20px;
+  font-size: 1.5rem;
 }
 
 .temp {
