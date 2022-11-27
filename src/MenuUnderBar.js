@@ -1,4 +1,4 @@
-export default function Menu_UnderBar({ $parent }) {
+export default function MenuUnderBar({ $parent }) {
   this.render = () => {
     this.bannerList = document.querySelectorAll(".banner"); //배너
 

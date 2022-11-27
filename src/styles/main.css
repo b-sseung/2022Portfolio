@@ -15,6 +15,10 @@ ul {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .menu {
   position: fixed;
   top: 0;
@@ -29,7 +33,6 @@ ul {
 }
 
 .menu a {
-  text-decoration: none;
   color: black;
   font-size: min(1.3rem, 2vmin);
 }
