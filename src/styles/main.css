@@ -34,7 +34,12 @@ a {
 
 .menu a {
   color: black;
-  font-size: min(1.3rem, 2vmin);
+  font-weight: bold;
+  font-size: min(1.5rem, 2vmin);
+}
+
+.menu a:hover {
+  color: lightcoral;
 }
 
 .menu .under-line {
