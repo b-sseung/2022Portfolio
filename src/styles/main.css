@@ -88,3 +88,18 @@ a {
 .temp {
   height: 100vh;
 }
+
+.skillTable {
+  font-family: "LINESeedKR-Bd";
+  font-size: min(2rem, 2vmin);
+  width: 80vw;
+}
+
+.skillTable img {
+  width: 5vmin;
+  height: 5vmin;
+}
+
+.skillTable p {
+  margin: 0;
+}

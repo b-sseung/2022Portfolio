@@ -2,18 +2,18 @@ export default function BannerSkill({ $parent }) {
   this.$target = document.createElement("div");
   $parent.appendChild(this.$target);
 
-  this.render = () => {
-    const language = {
-      Language: ["Java", "JavaScript", "HTML", "CSS", "C", "Kotlin"],
-      FrameWork: ["React", "Node.js"],
-      Database: ["MySQL", "Firebase"],
-      VersionControl: ["Github"],
-    };
+  const language = {
+    Language: ["Java", "JavaScript", "HTML", "CSS", "C", "Kotlin"],
+    FrameWork: ["React", "Node.js"],
+    Database: ["MySQL", "Firebase"],
+    VersionControl: ["Github"],
+  };
 
+  this.render = () => {
     this.$target.innerHTML = `
       <section class="banner Skill" id="Skill" style="background-color: gray">
         <div class="inner">
-          <table>
+          <table class="skillTable">
             ${Object.keys(language)
               .map((key) => {
                 const value = language[key];
@@ -26,7 +26,7 @@ export default function BannerSkill({ $parent }) {
                     return `
                     <tr>
                       <td>
-                        <img style="height:20px; width:2s0px;" src='/src/logo/${name
+                        <img src='/src/logo/${name
                           .replace(".", "")
                           .toLowerCase()}_logo.png'/>
                         <p>${name}</p>
