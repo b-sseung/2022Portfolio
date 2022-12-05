@@ -1,6 +1,10 @@
+import SkillTable from "./SkillTable.js";
+
 export default function BannerSkill({ $parent }) {
-  this.$target = document.createElement("div");
+  this.$target = document.createElement("section");
   $parent.appendChild(this.$target);
+  this.$target.className = "banner Skill";
+  this.$target.id = "Skill";
 
   const language = {
     Language: ["Java", "JavaScript", "HTML", "CSS", "C", "Kotlin"],
@@ -11,36 +15,15 @@ export default function BannerSkill({ $parent }) {
 
   this.render = () => {
     this.$target.innerHTML = `
-      <section class="banner Skill" id="Skill" style="background-color: gray">
-        <div class="inner">
-          <table class="skillTable">
-            ${Object.keys(language)
-              .map((key) => {
-                const value = language[key];
-                return `
-                <tr>
-                  <td rowspan='${value.length + 1}'>${key}</td>
-                </tr>
-                ${value
-                  .map((name) => {
-                    return `
-                    <tr>
-                      <td>
-                        <img src='/src/logo/${name
-                          .replace(".", "")
-                          .toLowerCase()}_logo.png'/>
-                        <p>${name}</p>
-                      </td>
-                    </tr>
-                  `;
-                  })
-                  .join("")}
-              `;
-              })
-              .join("")}
-          </table>
-        </div>
-      </section>
+      <div class="inner">
+      ${Object.keys(language)
+        .map((key) => {
+          return `
+          ${SkillTable({ key: key, value: language[key] })}
+        `;
+        })
+        .join("")}
+    </div>
     `;
   };
 

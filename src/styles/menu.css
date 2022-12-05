@@ -1,0 +1,29 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  height: 5vh;
+  align-items: center;
+  background-color: white;
+}
+
+.menu a {
+  color: black;
+  font-weight: bold;
+  font-size: min(1.5rem, 2vmin);
+}
+
+.menu a:hover {
+  color: lightcoral;
+}
+
+.menu .under-line {
+  position: absolute;
+  height: 0.3rem;
+  background-color: lightcoral;
+  transition: 0.6s ease-out;
+}

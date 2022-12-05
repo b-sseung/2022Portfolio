@@ -1,0 +1,49 @@
+.Skill {
+  background-color: gray;
+  text-align: center;
+}
+
+.Skill .inner {
+  width: 80vw;
+  height: 80%;
+}
+
+.skillTable {
+  font-family: "LINESeedKR-Bd";
+  font-size: min(2rem, 2vmin);
+  display: flex;
+}
+
+.skillTable img {
+  width: 5vmin;
+  height: 5vmin;
+}
+
+.skillTable p {
+  margin: 0;
+}
+
+.Skill .key {
+  width: 20vw;
+}
+
+.Skill .value {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.Skill .name {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .Skill .inner {
+    width: 100%;
+  }
+
+  .Skill .key {
+    width: 30%;
+  }
+}

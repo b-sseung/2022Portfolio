@@ -1,0 +1,33 @@
+.Top {
+  text-align: center;
+  display: table;
+}
+
+.Top .inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.Top div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Top .inner h1 {
+  font-family: "LINESeedKR-Bd";
+  font-size: min(10rem, 15vmin);
+  margin: 0;
+}
+
+.Top .inner p {
+  font-size: 1.3rem;
+}
+
+.Top .inner li {
+  cursor: pointer;
+  border: 1px gray solid;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+}
