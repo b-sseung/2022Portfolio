@@ -15,6 +15,7 @@ export default function BannerSkill({ $parent }) {
 
   this.render = () => {
     this.$target.innerHTML = `
+    
       <div class="inner">
       ${Object.keys(language)
         .map((key) => {
